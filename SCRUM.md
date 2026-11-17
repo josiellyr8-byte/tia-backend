@@ -18,7 +18,7 @@ Para atualizar uma tarefa, marque a caixa `[x]` quando concluir, altere o status
 | [x] | **T-01** | Exigir `JWT_SECRET` obrigatório em `jwt.util.ts` (remover fallback) | `🟢 Concluído` | `@caio` | `fix/jwt-secret` |
 | [x] | **T-02** | Condicionar `synchronize` e `logging` do TypeORM ao `NODE_ENV` em `data-source.ts` | `🟣 Em revisão` | `@adriano` | `chore/typeorm-env` |
 | [x] | **T-03** | Configurar `helmet`, `cors`, limite de JSON, rota `404` e logs HTTP (`morgan`/`pino-http`) em `app.ts` | `🟣 Em revisão` | `@adriano` | `feat/http-security` |
-| [ ] | **T-04** | Adicionar Rate Limiting (`express-rate-limit`) em `/auth/login`, `/auth/cadastro` e API geral | `⚪ A fazer` | `@responsavel` | `feat/rate-limit` |
+| [X] | **T-04** | Adicionar Rate Limiting (`express-rate-limit`) em `/auth/login`, `/auth/cadastro` e API geral | `🟣 Em revisão` | `@Josielly` | `feat/rate-limit` |
 | [ ] | **T-05** | Expandir `validarRequisicao` (Zod) para validar `params`, `query` e `body.strict()` | `⚪ A fazer` | `@responsavel` | `feat/zod-params-query` |
 | [ ] | **T-06** | Padronizar schemas Zod (senha `max(72)`, formato único de datas e `dataNascimento` não futura) | `⚪ A fazer` | `@responsavel` | `fix/zod-schemas` |
 | [ ] | **T-07** | Tratar `QueryFailedError` (MySQL) e `MulterError` no `error.middleware.ts` | `⚪ A fazer` | `@responsavel` | `feat/error-handlers` |
@@ -29,7 +29,7 @@ Para atualizar uma tarefa, marque a caixa `[x]` quando concluir, altere o status
 
 | Done | ID | Tarefa | Status | Responsável | Branch / PR |
 | :---: | :---: | :--- | :--- | :--- | :--- |
-| [ ] | **T-08** | Implementar RBAC: adicionar `role` (`PROFESSOR`, `COORDENADOR`, `ADMIN`) e `ativo` na entidade/JWT + middleware `autorizar` | `⚪ A fazer` | `@responsavel` | `feat/rbac` |
+| [X] | **T-08** | Implementar RBAC: adicionar `role` (`PROFESSOR`, `COORDENADOR`, `ADMIN`) e `ativo` na entidade/JWT + middleware `autorizar` | `🟣 Em revisão` | `@Josielly` | `feat/rbac` |
 | [ ] | **T-09** | Corrigir IDOR em `/conquistas` (vincular a `professorId` ou restringir catálogo global a `ADMIN`/`COORDENADOR`) | `⚪ A fazer` | `@responsavel` | `fix/conquista-idor` |
 | [ ] | **T-10** | Adicionar paginação (`page`, `limit`) e filtros com Zod em todas as rotas `GET /` | `⚪ A fazer` | `@responsavel` | `feat/paginacao` |
 | [ ] | **T-11** | Inicializar `AlunoConquista` (`NAO_TRABALHADO`) automaticamente ao matricular aluno ou vincular conquista à turma | `⚪ A fazer` | `@responsavel` | `feat/init-metas-aluno` |
